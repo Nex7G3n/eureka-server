@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: eureka-server
+  profiles:
+    active: dev
+  config:
+    import: optional:configserver:https://config-server.vardocs.app/eureka-server/dev
+server:
+  port: '8761'
