@@ -5,5 +5,9 @@ spring:
     active: dev
   config:
     import: optional:configserver:https://ms-config-server.nxgen.dev/eureka-server/dev
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
 server:
-  port: '8761'
+  port: 8761
